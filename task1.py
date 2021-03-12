@@ -25,8 +25,6 @@ def split_authors(line):
 with open('proceedings.txt', 'r', encoding='utf_8') as f:
     f_line = f.read()
     all_refs = find_refs(f_line)
-    for i in all_refs:
-        print(i)
     refs_split = [split_authors(i) for i in all_refs]
     for i in refs_split:
         print(i)
