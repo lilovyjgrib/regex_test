@@ -1,5 +1,4 @@
 import re
-from typing import List, Any
 
 
 def find_refs(file):
